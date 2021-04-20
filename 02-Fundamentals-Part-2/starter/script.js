@@ -229,7 +229,6 @@ console.log(aladin)
 // }
 // console.log(types)
 
-
 // const years = [1991,2000,2002,2014,2011]
 // const age=[]
 // for(let i =0; i<years.length;i++){
@@ -237,13 +236,11 @@ console.log(aladin)
 // }
 // console.log(age)
 
-
 // for(let i =0; i<umar.length;i++){
 //   if (typeof umar[i] !== `string`) continue
 // console.log(umar[i]);
 
 // }
-
 
 // =================
 
@@ -256,11 +253,9 @@ console.log(aladin)
 //   23,45,[34,454,5665,65,6]
 // ]
 
-
 // for (let i = umar.length-1; i >= 0; i--){
 //   console.log(umar[i])
 // }
-
 
 // for ( let exe=1; exe <4;exe++){
 //   console.log(  `-------start exercise ${exe}`)
@@ -270,35 +265,30 @@ console.log(aladin)
 // }
 // }
 
+const calcTip = function (bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
 
-
-
-
-  const calcTip=function(bill){
-return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-
-}
-
-const bills= [22,295,176,440,37,105,10,1100,86,52]
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const total = [];
 
-for(let i = 0; i<bills.length;i++){
-  const tip =calcTip(bills[i])
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
   tips.push(tip);
-  total.push(tips[i]+bills[i]);
+  total.push(tips[i] + bills[i]);
 }
 
+console.log(bills, tips, total);
 
-console.log(bills,tips,total)
-
-
-const calcAverage = function (arr){
-  let sum =0
-  for(let i = 0;i<arr.length;i++){
-    sum+=arr[i]
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
   }
 
-return sum/arr.length
-}
-console.log( calcAverage([1,2,3,4,5]))
+  return sum / arr.length;
+};
+console.log(calcAverage([1, 2, 3, 4, 5]));
+
+var kgf = "madafaka";
