@@ -289,6 +289,8 @@ const calcAverage = function (arr) {
 
   return sum / arr.length;
 };
+
 console.log(calcAverage([1, 2, 3, 4, 5]));
 
 var kgf = "madafaka";
+console.log();
