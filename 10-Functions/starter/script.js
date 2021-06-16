@@ -146,9 +146,59 @@ console.log(addVat());
 // addTax(.23)(23)
 
 
-const poll = {
-  question: 'What is your favourite programming language?',
-  options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
-  // This generates [0, 0, 0, 0]. More in the next section 😃
-  answers: new Array(4).fill(0)
+// const poll = {
+//   question: 'What is your favourite programming language?',
+//   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
+//   // This generates [0, 0, 0, 0]. More in the next section 😃
+//   answers: new Array(4).fill(0),
+  
+//  newAns(){
+//     const Answer = Number(
+//        prompt(`${this.question}\n ${this.options.join(`\n`)} \n (write options number)`)
+//        )
+//        console.log(Answer);
+       
+//        typeof Answer===`number`&&Answer<this.answers.length&&this.answers[Answer]++
+//        this.display();
+//        this.display(`string`);
+       
+//     },
+     
+// display(type=`array`){
+// if (type===`array`) {
+//    console.log(this.answers);
+   
+// }else if (type===`string`) {
+//    console.log(`poll result is ${this.answers.join(`, `)}`);
+   
+// }
+// }
+// }
+// document.querySelector(`.poll`).addEventListener('click',poll.newAns.bind(poll))
+
+
+// poll.display.call({ answers: [5, 2, 3] },`string`);
+
+// let runOnce=function () {
+//    console.log(`this wont run again `);
+   
+// }
+// runOnce()
+// (function () {
+//    console.log(`this wont run again `);
+   
+// })()
+
+
+
+(function () {
+    const header=document.querySelector(`h1`)
+    header.style.color=`blue`
+
+document.querySelector(`body`).addEventListener('click',function(){
+header.style.color=`red`
+})
+
 }
+
+)()
