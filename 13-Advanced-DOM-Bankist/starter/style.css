@@ -43,7 +43,7 @@ body {
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(10rem);
 }
 
 .section__title {
@@ -118,7 +118,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9rem;
+  height: 7rem;
   width: 100%;
   padding: 0 6rem;
   z-index: 100;
@@ -458,8 +458,8 @@ h4 {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
-  background-color: #888;
+  background-color: rgb(54, 54, 54);
+  /* background-color: #888; */
   opacity: 1;
 }
 
